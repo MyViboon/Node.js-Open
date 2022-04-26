@@ -10,12 +10,12 @@ const port = 3000;
 
 app.use(morgan('combined'));
 app.use(express.static(path.join(__dirname, "/public/smash-template-opl/")));
-app.get("/", (req,res) =>{
+// app.get("/", (req,res) =>{
 
-    res.send("Hello Viboon Back Back");
+//     res.send("Hello Viboon Back Back");
 
-})
+// })
 
 app.listen(port, ()=>{
-    console.log("Listening on Port"+ chalk.blue(port));
+    debug("Listening on Port"+ chalk.blue(port));
 })
