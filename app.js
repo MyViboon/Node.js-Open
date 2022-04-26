@@ -16,5 +16,5 @@ app.use(morgan('combined'));
 // })
 
 app.listen(port, ()=>{
-    debug("Listening on Port"+ chalk.blue(port));
+    console.log("Listening on Port"+ chalk.blue(port));
 })
