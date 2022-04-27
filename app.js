@@ -5,7 +5,7 @@ const morgan = require('morgan');
 const path = require('path');
 
 const app = express();
-const port = 3000;
+const port = 4000;
 
 
 app.use(morgan('combined'));
@@ -17,5 +17,5 @@ app.use(express.static(path.join(__dirname, "/public/smash-template-opl/")));
 // })
 
 app.listen(port, ()=>{
-    debug("Listening on Port"+ chalk.blue(port));
+    console.log("Listening on Port"+ chalk.blue(port));
 })
